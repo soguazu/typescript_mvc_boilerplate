@@ -1,0 +1,6 @@
+build
+.history
+node_modules
+.env
+docs
+logs

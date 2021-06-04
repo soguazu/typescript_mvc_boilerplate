@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "esnext"],
+    "allowJs": true,
+    "outDir": "build",
+    "rootDir": ".",
+    "removeComments": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": false,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@infra/*": ["src/infra/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@app/*": ["src/app/*"],
+      "@domain/*": ["src/domain/*"],
+      "@config/*": ["config/*"]
+    },
+    "esModuleInterop": true,
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    /* Advanced Options */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./typings", "./node_modules/@types/"]
+  },
+  "exclude": ["node_modules", "build", "coverage"],
+  "include": ["src"]
+}
